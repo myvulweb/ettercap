@@ -11,7 +11,7 @@ macro_ensure_out_of_source_build("${PROJECT_NAME} requires an out of source buil
 Please create a separate build directory and run 'cmake /path/to/${PROJECT_NAME} [options]' there.")
 
 option(ENABLE_CURSES "Enable curses interface" ON)
-option(ENABLE_GTK "Enable GTK interface" ON)
+option(ENABLE_GTK "Enable GTK interface" OFF)
 option(ENABLE_PLUGINS "Enable plugins support" ON)
 option(ENABLE_IPV6 "Enable IPv6 support" OFF)
 option(ENABLE_LUA "Enable LUA support (EXPERIMENTAL)" OFF)
@@ -19,7 +19,7 @@ option(ENABLE_PDF_DOCS "Enable PDF document generation" OFF)
 option(ENABLE_TESTS "Enable Unit Tests" OFF)
 option(ENABLE_GEOIP "Build with GeoIP support" ON)
 option(LIBRARY_BUILD "Build for libettercap only" OFF)
-option(INSTALL_DESKTOP "Install ettercap desktop files" ON)
+option(INSTALL_DESKTOP "Install ettercap desktop files" OFF)
 
 
 set(VALID_BUILD_TYPES Debug Release RelWithDebInfo)
